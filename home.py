@@ -102,7 +102,7 @@ class TaskLinkedList:
                 "Status": current.status,
             })
             current = current.next
-        return tasks
+        return sorted(tasks, key=lambda x: x["Priority"])
 
 
 # Initialize the task linked list
